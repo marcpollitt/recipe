@@ -44,9 +44,7 @@ To run find (get)
 		"recipe_cuisine": "italian",
 		"in_your_box": "king prawns, basmati rice, onion, tomatoes, garlic, ginger, ground tumeric, red chilli powder, ground cumin, fresh coriander, curry leaves, fennel seeds",
 		"gousto_reference": "58"
-	}, .... 
-]
-
+	}, .... ]
     
 ## To update a existing recipe (put)
 
