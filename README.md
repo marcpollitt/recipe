@@ -81,7 +81,7 @@ To run find (get)
 ## To rate cuisine
     http://localhost:8000/recipe/rate/{id}/rating/{rate}
 
-The reason for choosing symfony is because I have expode to it and I know how it works. 
+The reason for choosing symfony is because I have been expodes to it and I know how it works. 
 
 The backend does not rely on the frontend so that is the solution is the best.   You have one restful client service set up which can server many application (mobile, web or tablet) 
 
