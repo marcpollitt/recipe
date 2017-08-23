@@ -1,18 +1,19 @@
-# once cloned out of git repo run php composer.phar update to get all bundles.
-# then run bin/console server:run
-# api is now set up and useable now. 
-# use postman to run api.
+#Read Me 
+ once cloned out of git repo run php composer.phar update to get all bundles.
+ then run bin/console server:run
+ api is now set up and useable now. 
+ use postman to run api.
 
 To run find (get)
 
     localhost:8080/recipe/find/{id} 
     
 
-# To run findall (get)
+## To run findall (get)
  
     localhost:8080/recipe/findall/cuisine/{cuisine}/page/{page}
         
-# To insert a new recipe (post)
+## To insert a new recipe (post)
 
     localhost:8080/recipe/create
     
@@ -47,16 +48,13 @@ To run find (get)
 ]
 
     
-# To update a existing recipe (put)
+## To update a existing recipe (put)
 
     localhost:8080/recipe/update/{id}
      
     Request body must be like so
     
      {
-		"id": "7",
-		"created_at": "02/07/2015 17:58:00",
-		"updated_at": "02/07/2015 17:58:00",
 		"box_type": "vegetarian",
 		"title": "Courgette Pasta Rags",
 		"slug": "courgette-pasta-rags",
@@ -82,10 +80,12 @@ To run find (get)
 		"gousto_reference": "59"
 	}
     
-To rate cuisine
+## To rate cuisine
     http://localhost:8000/recipe/rate/{id}/rating/{rate}
 
 The reason for choosing symfony is because I have expode to it and I know how it works. 
 
 The backend does not rely on the frontend so that is the solution is the best.   You have one restful client service set up which can server many application (mobile, web or tablet) 
+
+Data has already been set up for you to look at.  
 
