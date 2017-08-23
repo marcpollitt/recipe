@@ -1,0 +1,751 @@
+<?php
+
+namespace AppBundle\Entity;
+
+/**
+ * recipe
+ */
+class recipe
+{
+    /**
+     * @var int
+     */
+    private $id;
+
+    /**
+     * @var \DateTime
+     */
+    private $createdAt;
+
+    /**
+     * @var \DateTime
+     */
+    private $updatedAt;
+
+    /**
+     * @var string
+     */
+    private $boxType;
+
+    /**
+     * @var string
+     */
+    private $title;
+
+    /**
+     * @var string
+     */
+    private $slug;
+
+    /**
+     * @var string
+     */
+    private $shortTitle;
+
+    /**
+     * @var string
+     */
+    private $marketDescription;
+
+    /**
+     * @var int
+     */
+    private $caloriesKcal;
+
+    /**
+     * @var int
+     */
+    private $proteinGrams;
+
+    /**
+     * @var int
+     */
+    private $fatGrams;
+
+    /**
+     * @var string
+     */
+    private $carbsGrams;
+
+    /**
+     * @var string
+     */
+    private $bulletpoint1;
+
+    /**
+     * @var string
+     */
+    private $bulletpoint2;
+
+    /**
+     * @var string
+     */
+    private $bulletpoint3;
+
+    /**
+     * @var string
+     */
+    private $recipeDietTypeId;
+
+    /**
+     * @var string
+     */
+    private $season;
+
+    /**
+     * @var string
+     */
+    private $base;
+
+    /**
+     * @var string
+     */
+    private $proteinSource;
+
+    /**
+     * @var int
+     */
+    private $preparationTimeMinutes;
+
+    /**
+     * @var int
+     */
+    private $shelfLifeDays;
+
+    /**
+     * @var string
+     */
+    private $equipmentNeeded;
+
+    /**
+     * @var string
+     */
+    private $originCountry;
+
+    /**
+     * @var string
+     */
+    private $recipeCuisine;
+
+    /**
+     * @var string
+     */
+    private $inYourBox;
+
+    /**
+     * @var integer
+     */
+    private $goustoReference;
+
+
+    /**
+     * Get id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set createdAt
+     *
+     * @param \DateTime $createdAt
+     *
+     * @return recipe
+     */
+    public function setCreatedAt($createdAt)
+    {
+        $this->createdAt = $createdAt;
+
+        return $this;
+    }
+
+    /**
+     * Get createdAt
+     *
+     * @return \DateTime
+     */
+    public function getCreatedAt()
+    {
+        return $this->createdAt;
+    }
+
+    /**
+     * Set updatedAt
+     *
+     * @param \DateTime $updatedAt
+     *
+     * @return recipe
+     */
+    public function setUpdatedAt($updatedAt)
+    {
+        $this->updatedAt = $updatedAt;
+
+        return $this;
+    }
+
+    /**
+     * Get updatedAt
+     *
+     * @return \DateTime
+     */
+    public function getUpdatedAt()
+    {
+        return $this->updatedAt;
+    }
+
+    /**
+     * Set boxType
+     *
+     * @param string $boxType
+     *
+     * @return recipe
+     */
+    public function setBoxType($boxType)
+    {
+        $this->boxType = $boxType;
+
+        return $this;
+    }
+
+    /**
+     * Get boxType
+     *
+     * @return string
+     */
+    public function getBoxType()
+    {
+        return $this->boxType;
+    }
+
+    /**
+     * Set title
+     *
+     * @param string $title
+     *
+     * @return recipe
+     */
+    public function setTitle($title)
+    {
+        $this->title = $title;
+
+        return $this;
+    }
+
+    /**
+     * Get title
+     *
+     * @return string
+     */
+    public function getTitle()
+    {
+        return $this->title;
+    }
+
+    /**
+     * Set slug
+     *
+     * @param string $slug
+     *
+     * @return recipe
+     */
+    public function setSlug($slug)
+    {
+        $this->slug = $slug;
+
+        return $this;
+    }
+
+    /**
+     * Get slug
+     *
+     * @return string
+     */
+    public function getSlug()
+    {
+        return $this->slug;
+    }
+
+    /**
+     * Set shortTitle
+     *
+     * @param string $shortTitle
+     *
+     * @return recipe
+     */
+    public function setShortTitle($shortTitle)
+    {
+        $this->shortTitle = $shortTitle;
+
+        return $this;
+    }
+
+    /**
+     * Get shortTitle
+     *
+     * @return string
+     */
+    public function getShortTitle()
+    {
+        return $this->shortTitle;
+    }
+
+    /**
+     * Set marketDescription
+     *
+     * @param string $marketDescription
+     *
+     * @return recipe
+     */
+    public function setMarketDescription($marketDescription)
+    {
+        $this->marketDescription = $marketDescription;
+
+        return $this;
+    }
+
+    /**
+     * Get marketDescription
+     *
+     * @return string
+     */
+    public function getMarketDescription()
+    {
+        return $this->marketDescription;
+    }
+
+    /**
+     * Set caloriesKcal
+     *
+     * @param integer $caloriesKcal
+     *
+     * @return recipe
+     */
+    public function setCaloriesKcal($caloriesKcal)
+    {
+        $this->caloriesKcal = $caloriesKcal;
+
+        return $this;
+    }
+
+    /**
+     * Get caloriesKcal
+     *
+     * @return int
+     */
+    public function getCaloriesKcal()
+    {
+        return $this->caloriesKcal;
+    }
+
+    /**
+     * Set proteinGrams
+     *
+     * @param integer $proteinGrams
+     *
+     * @return recipe
+     */
+    public function setProteinGrams($proteinGrams)
+    {
+        $this->proteinGrams = $proteinGrams;
+
+        return $this;
+    }
+
+    /**
+     * Get proteinGrams
+     *
+     * @return int
+     */
+    public function getProteinGrams()
+    {
+        return $this->proteinGrams;
+    }
+
+    /**
+     * Set fatGrams
+     *
+     * @param integer $fatGrams
+     *
+     * @return recipe
+     */
+    public function setFatGrams($fatGrams)
+    {
+        $this->fatGrams = $fatGrams;
+
+        return $this;
+    }
+
+    /**
+     * Get fatGrams
+     *
+     * @return int
+     */
+    public function getFatGrams()
+    {
+        return $this->fatGrams;
+    }
+
+    /**
+     * Set carbsGrams
+     *
+     * @param string $carbsGrams
+     *
+     * @return recipe
+     */
+    public function setCarbsGrams($carbsGrams)
+    {
+        $this->carbsGrams = $carbsGrams;
+
+        return $this;
+    }
+
+    /**
+     * Get carbsGrams
+     *
+     * @return string
+     */
+    public function getCarbsGrams()
+    {
+        return $this->carbsGrams;
+    }
+
+    /**
+     * Set bulletpoint1
+     *
+     * @param string $bulletpoint1
+     *
+     * @return recipe
+     */
+    public function setBulletpoint1($bulletpoint1)
+    {
+        $this->bulletpoint1 = $bulletpoint1;
+
+        return $this;
+    }
+
+    /**
+     * Get bulletpoint1
+     *
+     * @return string
+     */
+    public function getBulletpoint1()
+    {
+        return $this->bulletpoint1;
+    }
+
+    /**
+     * Set bulletpoint2
+     *
+     * @param string $bulletpoint2
+     *
+     * @return recipe
+     */
+    public function setBulletpoint2($bulletpoint2)
+    {
+        $this->bulletpoint2 = $bulletpoint2;
+
+        return $this;
+    }
+
+    /**
+     * Get bulletpoint2
+     *
+     * @return string
+     */
+    public function getBulletpoint2()
+    {
+        return $this->bulletpoint2;
+    }
+
+    /**
+     * Set bulletpoint3
+     *
+     * @param string $bulletpoint3
+     *
+     * @return recipe
+     */
+    public function setBulletpoint3($bulletpoint3)
+    {
+        $this->bulletpoint3 = $bulletpoint3;
+
+        return $this;
+    }
+
+    /**
+     * Get bulletpoint3
+     *
+     * @return string
+     */
+    public function getBulletpoint3()
+    {
+        return $this->bulletpoint3;
+    }
+
+    /**
+     * Set recipeDietTypeId
+     *
+     * @param string $recipeDietTypeId
+     *
+     * @return recipe
+     */
+    public function setRecipeDietTypeId($recipeDietTypeId)
+    {
+        $this->recipeDietTypeId = $recipeDietTypeId;
+
+        return $this;
+    }
+
+    /**
+     * Get recipeDietTypeId
+     *
+     * @return string
+     */
+    public function getRecipeDietTypeId()
+    {
+        return $this->recipeDietTypeId;
+    }
+
+    /**
+     * Set season
+     *
+     * @param string $season
+     *
+     * @return recipe
+     */
+    public function setSeason($season)
+    {
+        $this->season = $season;
+
+        return $this;
+    }
+
+    /**
+     * Get season
+     *
+     * @return string
+     */
+    public function getSeason()
+    {
+        return $this->season;
+    }
+
+    /**
+     * Set base
+     *
+     * @param string $base
+     *
+     * @return recipe
+     */
+    public function setBase($base)
+    {
+        $this->base = $base;
+
+        return $this;
+    }
+
+    /**
+     * Get base
+     *
+     * @return string
+     */
+    public function getBase()
+    {
+        return $this->base;
+    }
+
+    /**
+     * Set proteinSource
+     *
+     * @param string $proteinSource
+     *
+     * @return recipe
+     */
+    public function setProteinSource($proteinSource)
+    {
+        $this->proteinSource = $proteinSource;
+
+        return $this;
+    }
+
+    /**
+     * Get proteinSource
+     *
+     * @return string
+     */
+    public function getProteinSource()
+    {
+        return $this->proteinSource;
+    }
+
+    /**
+     * Set preparationTimeMinutes
+     *
+     * @param integer $preparationTimeMinutes
+     *
+     * @return recipe
+     */
+    public function setPreparationTimeMinutes($preparationTimeMinutes)
+    {
+        $this->preparationTimeMinutes = $preparationTimeMinutes;
+
+        return $this;
+    }
+
+    /**
+     * Get preparationTimeMinutes
+     *
+     * @return int
+     */
+    public function getPreparationTimeMinutes()
+    {
+        return $this->preparationTimeMinutes;
+    }
+
+    /**
+     * Set shelfLifeDays
+     *
+     * @param integer $shelfLifeDays
+     *
+     * @return recipe
+     */
+    public function setShelfLifeDays($shelfLifeDays)
+    {
+        $this->shelfLifeDays = $shelfLifeDays;
+
+        return $this;
+    }
+
+    /**
+     * Get shelfLifeDays
+     *
+     * @return int
+     */
+    public function getShelfLifeDays()
+    {
+        return $this->shelfLifeDays;
+    }
+
+    /**
+     * Set equipmentNeeded
+     *
+     * @param string $equipmentNeeded
+     *
+     * @return recipe
+     */
+    public function setEquipmentNeeded($equipmentNeeded)
+    {
+        $this->equipmentNeeded = $equipmentNeeded;
+
+        return $this;
+    }
+
+    /**
+     * Get equipmentNeeded
+     *
+     * @return string
+     */
+    public function getEquipmentNeeded()
+    {
+        return $this->equipmentNeeded;
+    }
+
+    /**
+     * Set originCountry
+     *
+     * @param string $originCountry
+     *
+     * @return recipe
+     */
+    public function setOriginCountry($originCountry)
+    {
+        $this->originCountry = $originCountry;
+
+        return $this;
+    }
+
+    /**
+     * Get originCountry
+     *
+     * @return string
+     */
+    public function getOriginCountry()
+    {
+        return $this->originCountry;
+    }
+
+    /**
+     * Set recipeCuisine
+     *
+     * @param string $recipeCuisine
+     *
+     * @return recipe
+     */
+    public function setRecipeCuisine($recipeCuisine)
+    {
+        $this->recipeCuisine = $recipeCuisine;
+
+        return $this;
+    }
+
+    /**
+     * Get recipeCuisine
+     *
+     * @return string
+     */
+    public function getRecipeCuisine()
+    {
+        return $this->recipeCuisine;
+    }
+
+    /**
+     * Set inYourBox
+     *
+     * @param string $inYourBox
+     *
+     * @return recipe
+     */
+    public function setInYourBox($inYourBox)
+    {
+        $this->inYourBox = $inYourBox;
+
+        return $this;
+    }
+
+    /**
+     * Get inYourBox
+     *
+     * @return string
+     */
+    public function getInYourBox()
+    {
+        return $this->inYourBox;
+    }
+
+    /**
+     * Set goustoReference
+     *
+     * @param string $goustoReference
+     *
+     * @return recipe
+     */
+    public function setGoustoReference($goustoReference)
+    {
+        $this->goustoReference = $goustoReference;
+
+        return $this;
+    }
+
+    /**
+     * Get goustoReference
+     *
+     * @return string
+     */
+    public function getGoustoReference()
+    {
+        return $this->goustoReference;
+    }
+}
+

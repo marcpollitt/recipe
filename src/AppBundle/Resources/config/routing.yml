@@ -1,0 +1,24 @@
+recipe_find:
+    path: /recipe/find/{id}
+    methods: GET
+    defaults: { _controller: 'AppBundle:Default:find' }
+
+recipe_findAll:
+    path: /recipe/findall/cuisine/{cuisine}/page/{page}
+    methods: GET
+    defaults: { _controller: 'AppBundle:Default:fineAll' }
+
+recipe_create:
+    path: /recipe/create
+    methods: POST
+    defaults: { _controller: 'AppBundle:Default:create' }
+
+recipe_update:
+    path: /recipe/update/{id}
+    methods: PUT
+    defaults: { _controller: 'AppBundle:Default:update' }
+
+recipe_rate:
+    path: /recipe/rate/{id}/rating/{rate}
+    methods: PUT
+    defaults: { _controller: 'AppBundle:Default:rate' }

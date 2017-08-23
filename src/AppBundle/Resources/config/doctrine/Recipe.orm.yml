@@ -1,0 +1,95 @@
+AppBundle\Entity\Recipe:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\RecipeRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        createdAt:
+            type: datetime
+            column: created_at
+        updatedAt:
+            type: datetime
+            column: updated_at
+        boxType:
+            type: string
+            length: 255
+            column: box_type
+        title:
+            type: text
+        slug:
+            type: text
+        shortTitle:
+            type: text
+            column: short_title
+        marketDescription:
+            type: text
+            column: market_description
+        caloriesKcal:
+            type: integer
+            column: calories_kcal
+        proteinGrams:
+            type: integer
+            column: protein_grams
+        fatGrams:
+            type: integer
+            column: fat_grams
+        carbsGrams:
+            type: integer
+            column: carbs_grams
+        bulletPoint1:
+            type: text
+        bulletPoint2:
+            type: text
+        bulletPoint3:
+            type: text
+        recipeDietTypeId:
+            type: string
+            length: 255
+            column: recipe_diet_type_id
+        season:
+            type: string
+            length: 255
+        base:
+            type: string
+            length: 255
+        proteinSource:
+            type: string
+            length: 255
+            column: protein_source
+        preparationTimeMinutes:
+            type: integer
+            column: preparation_time_minutes
+        shelfLifeDays:
+            type: integer
+            column: shelf_life_days
+        equipmentNeeded:
+            type: string
+            length: 255
+            column: equipment_needed
+        originCountry:
+            type: string
+            length: 255
+            column: origin_country
+        recipeCuisine:
+            type: string
+            length: 255
+            column: recipe_cuisine
+        inYourBox:
+            type: text
+            column: in_your_box
+        goustoReference:
+            type: integer
+#            unique: true
+            column: gousto_reference
+        rate:
+            type: integer
+            nullable: true
+            column: rate
+    lifecycleCallbacks:
+        prePersist: [preCreated]
+        preUpdate: [preUpdated]
